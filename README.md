@@ -1,30 +1,45 @@
-# RoadSafeAI - Dashboard (React + Leaflet)
+--> RoadSafeAI - Dashboard (React + Tailwind + Mapbox)
+
+A modern web dashboard for visualizing pothole reports collected by the backend.
+Built with React, TailwindCSS, Mapbox, and Chart.js.
 
 
-## Quick start
+--> Features
+
+-Interactive map with pothole markers (by severity & location)
+
+-Upload images via web interface
+
+-Heatmap visualization for hotspots
+
+-Statistics dashboard (counts, trends, severity charts)
+
+-Authentication-ready (placeholder for JWT/OAuth)
+
+-Responsive design (desktop + mobile)
 
 
-1. Install node (Node 18+ recommended)
+--> Project Structure
+roadsafeai-dashboard/
+│── src/
+│   ├── components/   # UI components (cards, charts, map, navbar)
+│   ├── pages/        # Main pages (Dashboard, Upload, Map, Reports)
+│   ├── services/     # API calls to backend
+│   └── App.jsx       # Root React app
+│── public/           # Static assets
+│── package.json      # Dependencies
+│── tailwind.config.js
+│── README.md
 
-
-2. Install dependencies:
-
-```bash
+--> Quick Start
+# Install dependencies
 npm install
-```
 
-3. Start dev server:
-
-```bash
+# Start development server
 npm start
-```
 
-4. Build for production:
-
-```bash
+# Build for production
 npm run build
-```
 
-## Notes
-- Update `src/config.js` to point to your backend URL (e.g. https://your-backend.com)
-- Deploy the `build/` folder on Netlify/Vercel
+--> Backend API
+Make sure to update the backend URL in src/services/api.js before running.
